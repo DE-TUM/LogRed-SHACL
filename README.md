@@ -6,13 +6,13 @@
    <img src="https://img.shields.io/badge/license-MIT-green">
 </div>
 
-# Project overview
+# Overview
 
-### Project Name
+### Name
 LogRed-SHACL — *Logical Redundancy Reduction in Shape Constraints for
 Knowledge Graph Validation*.
 
-### Project Purpose and Goals
+### Purpose and Goals
 Large SHACL shape schemas — produced by shape miners, extracted from
 ontologies, or assembled from reusable templates — tend to accumulate
 logically redundant constraints. A validator faithfully evaluates each of
@@ -27,8 +27,7 @@ reduced shape schema that any existing SHACL validator can consume.
 
 ### Paper
 Jin Ke, Antoon Bronselaer, Maribel Acosta. *Logical Redundancy Reduction in
-Shape Constraints for Knowledge Graph Validation.* PVLDB, submitted.
-doi: *(to be added on publication)*
+Shape Constraints for Knowledge Graph Validation.*
 
 # Table of Contents
 1. [Installation Instructions](#installation-instructions)
@@ -60,13 +59,13 @@ Requires Maven 3.6+.
 java -jar logred-shacl-0.1.0.jar <shapes.ttl>
 ```
 
-The simplified output is written to `<shapes>_simplified.ttl`. Common options:
+The reduced output is written to `<shapes>_simplified.ttl`. Common options:
 
 | Option | Description |
 | --- | --- |
 | `-o <path>` | Output file path. |
-| `--format <fmt>` | `ntriples` (default), `turtle-flat`, `turtle-pretty`, `turtle-blocks`. |
 | `--parallel` `-j <n>` | Parallel reduction with `n` worker threads. |
+| `--no-pattern-cache` | Disable the pattern-based expression cache (enabled by default). |
 | `--stats` | Print parse / reduce / serialize timings. |
 | `-h` | Show all options. |
 
@@ -85,9 +84,12 @@ mvn test
 MIT — see [LICENSE.txt](LICENSE.txt).
 
 # Acknowledgements
+This work has been funded by the Deutsche Forschungsgemeinschaft (DFG,
+German Research Foundation) — SFB 1608 — 501798263, and SFB 1625 —
+506711657, subproject A06.
+
 Built on [Apache Jena](https://jena.apache.org/) (RDF/SHACL I/O) and
 [LogicNG](https://github.com/logic-ng/LogicNG) (Boolean formula simplification).
-Joint work between TU Munich (Chair of Data Engineering) and Ghent University.
 
 # Contact Information
 ### jin.ke@tum.de
