@@ -30,12 +30,17 @@ Jin Ke, Antoon Bronselaer, Maribel Acosta. *Logical Redundancy Reduction in
 Shape Constraints for Knowledge Graph Validation.*
 
 # Table of Contents
-1. [Installation Instructions](#installation-instructions)
-2. [How to use](#how-to-use)
-3. [Testing](#testing)
-4. [Licensing](#licensing)
-5. [Acknowledgements](#acknowledgements)
-6. [Contact Information](#contact-information)
+1. [Datasets](#datasets)
+2. [Installation Instructions](#installation-instructions)
+3. [How to use](#how-to-use)
+4. [Testing](#testing)
+5. [Licensing](#licensing)
+6. [Acknowledgements](#acknowledgements)
+7. [Contact Information](#contact-information)
+
+# Datasets
+The shape graphs and knowledge graphs used in the paper are archived on
+Zenodo: https://zenodo.org/records/20728918
 
 # Installation Instructions
 
